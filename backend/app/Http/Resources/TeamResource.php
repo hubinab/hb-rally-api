@@ -18,6 +18,7 @@ class TeamResource extends JsonResource
             "id" => $this->id,
             "name" => $this->name,
             "country" => $this->country,
+            "race" => new RaceResource($this->whenLoaded("race")),
         ];
     }
 }

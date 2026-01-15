@@ -13,7 +13,7 @@ class Team extends Model
             "country",
         ];
 
-        public function races(): BelongsTo{
+        public function race(): BelongsTo{
             return $this->belongsTo(Race::class);
         }
 }
